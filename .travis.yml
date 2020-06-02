@@ -1,0 +1,6 @@
+language: ruby
+
+script:
+  - bundle exec rspec spec
+  - bundle exec overcommit --sign
+  - bundle exec overcommit --run
