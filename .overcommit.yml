@@ -1,0 +1,8 @@
+PreCommit:
+  TrailingWhitespace:
+    enabled: true
+
+  RuboCop:
+    enabled: true
+    required_executable: 'rubocop'
+    command: ['bundle', 'exec', 'rubocop']
