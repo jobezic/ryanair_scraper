@@ -22,6 +22,7 @@ class RyanairScraper
 
   def do_request_to_api
     base_uri = "https://#{API_HOST}/api/booking/v4/es-es/availability"
+    # TODO: compose the url by parameters in a better way + parametrize all
     uri = URI("#{base_uri}?ADT=1&CHD=0&DateIn=#{@date_in}&DateOut=#{@date_out}&Destination=#{@destination}&Disc=0&INF=0&Origin=#{@origin}&TEEN=0&FlexDaysIn=2&FlexDaysBeforeIn=2&FlexDaysOut=2&FlexDaysBeforeOut=2&ToUs=AGREED&IncludeConnectingFlights=false&RoundTrip=#{@round_trip}")
     Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == 'https') do |http|
       request = Net::HTTP::Get.new uri
