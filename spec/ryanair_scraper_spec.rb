@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './src/ryanair_scraper'
 require 'spec_helper'
 
