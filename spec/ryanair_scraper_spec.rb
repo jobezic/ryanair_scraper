@@ -88,10 +88,29 @@ RSpec.describe RyanairScraper do
         expect(response).to be_an_instance_of(Array)
       end
 
-      it 'returns a single trip' do
+      it 'returns a 2-way trip' do
         response = command.call
 
         expect(response.length).to eq(2)
+      end
+
+      it 'returns valid flights for the specific origin, destination and dates' do
+        response = command.call.first
+
+        expect(response).to eq(
+          origin: 'AGP',
+          destination: 'BLQ',
+          dates: [
+            {
+              date_out: '2020-07-01T00:00:00.000',
+              flights: [{ fares_left: -1, fares: [{ amount: 59.52 }] }]
+            },
+            {
+              date_out: '2020-07-03T00:00:00.000',
+              flights: [{ fares_left: 4, fares: [{ amount: 75.99 }] }]
+            }
+          ]
+        )
       end
     end
   end
