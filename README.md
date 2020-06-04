@@ -1,5 +1,5 @@
-# ryanair_scraper
-Ryanair flights scraper
+# Ryanair flights scraper
+The goal of this project is to extract some meaningful data from the Ryanair's API to get info about flights. Side goal is to learn from that api about how this stuff is handled.
 
 ## API
 
