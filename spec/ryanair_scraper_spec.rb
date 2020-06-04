@@ -22,5 +22,15 @@ RSpec.describe RyanairScraper do
 
       expect(response).to be_an_instance_of(Hash)
     end
+
+    it 'returns a response containing an origin, a destination and dates' do
+      response = command.call
+
+      expect(response.keys).to eq %i[
+        origin
+        destination
+        dates
+      ]
+    end
   end
 end
