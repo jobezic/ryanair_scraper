@@ -7,6 +7,19 @@ How to call the api to receive info on a flight:
 
 https://www.ryanair.com/api/booking/v4/es-es/availability?ADT=1&CHD=0&DateIn=&DateOut=2020-07-01&Destination=BLQ&Disc=0&INF=0&Origin=AGP&TEEN=0&FlexDaysIn=2&FlexDaysBeforeIn=2&FlexDaysOut=2&FlexDaysBeforeOut=2&ToUs=AGREED&IncludeConnectingFlights=false&RoundTrip=false
 
+```
+Origin      # origin airport code
+Destination # destination airport code
+ADT=1       # adults
+CHD=0       # childs
+DateIn=     # return date
+DateOut=    # departure date
+RoundTrip=  # true for 2-way trips
+Disc=       # discounts?
+TEEN=       # teenagers?
+```
+
+
 Here is how the response looks like:
 
 ```
