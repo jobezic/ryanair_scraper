@@ -1,0 +1,273 @@
+{
+  "termsOfUse": "https://www.ryanair.com/ie/en/corporate/terms-of-use=AGREED",
+  "currency": "EUR",
+  "currPrecision": 2,
+  "routeGroup": "LEISURE",
+  "tripType": "SUN_BREAK",
+  "upgradeType": "PLUS",
+  "trips": [
+    {
+      "origin": "AGP",
+      "originName": "Málaga",
+      "destination": "BLQ",
+      "destinationName": "Bolonia",
+      "routeGroup": "LEISURE",
+      "tripType": "SUN_BREAK",
+      "upgradeType": "PLUS",
+      "dates": [
+        {
+          "dateOut": "2020-06-29T00:00:00.000",
+          "flights": []
+        },
+        {
+          "dateOut": "2020-06-30T00:00:00.000",
+          "flights": []
+        },
+        {
+          "dateOut": "2020-07-01T00:00:00.000",
+          "flights": [
+            {
+              "faresLeft": -1,
+              "flightKey": "FR~4602~ ~~AGP~07/01/2020 06:55~BLQ~07/01/2020 09:25~~",
+              "infantsLeft": 18,
+              "regularFare": {
+                "fareKey": "MEX4QLH4RFDOS5UWS2UVIKZUFSNWXMDFWLIB6FC4WYDJHF6F3FHBU5S5HY54DHTAKSHSLYA2KRJEZD33R2V6MMC7PZRJP2C3626LQG3DWI5E2GPRNWER7RTZXE5FXL4PWIHG7LCZDDJAYAVRTIM3MLHHAFKSOLQXRRTB5GLLP2WLARVJPV5Q",
+                "fareClass": "H",
+                "fares": [
+                  {
+                    "type": "ADT",
+                    "amount": 59.52,
+                    "count": 2,
+                    "hasDiscount": true,
+                    "publishedFare": 65.99,
+                    "discountInPercent": 11,
+                    "hasPromoDiscount": false,
+                    "discountAmount": 0
+                  }
+                ]
+              },
+              "operatedBy": "",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "AGP",
+                  "destination": "BLQ",
+                  "flightNumber": "FR 4602",
+                  "time": [
+                    "2020-07-01T06:55:00.000",
+                    "2020-07-01T09:25:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-07-01T04:55:00.000Z",
+                    "2020-07-01T07:25:00.000Z"
+                  ],
+                  "duration": "02:30"
+                }
+              ],
+              "flightNumber": "FR 4602",
+              "time": [
+                "2020-07-01T06:55:00.000",
+                "2020-07-01T09:25:00.000"
+              ],
+              "timeUTC": [
+                "2020-07-01T04:55:00.000Z",
+                "2020-07-01T07:25:00.000Z"
+              ],
+              "duration": "02:30"
+            }
+          ]
+        },
+        {
+          "dateOut": "2020-07-02T00:00:00.000",
+          "flights": []
+        },
+        {
+          "dateOut": "2020-07-03T00:00:00.000",
+          "flights": [
+            {
+              "faresLeft": 4,
+              "flightKey": "FR~4602~ ~~AGP~07/03/2020 09:45~BLQ~07/03/2020 12:15~~",
+              "infantsLeft": 17,
+              "regularFare": {
+                "fareKey": "VUMABVV62VJ4YX4KADIWW6AQMHY2UAMI4SBBF2VIVHVZAR7ZYZR2SYCDP5EWXDIC7EGJR4YBMR3HT7I5CPR6IXFAUTDARCHEHMKDBJJB7ACLMOQPOWOXHYTWOQM5ETU3R2F2PIQ3H3DE5GRHFQAYAVPMMEYNJ5DBJKJMEFQUGBI7DAXWQ3RL3IXHUBFCPV7HIGRUWPWDFCIPS",
+                "fareClass": "C",
+                "fares": [
+                  {
+                    "type": "ADT",
+                    "amount": 75.99,
+                    "count": 2,
+                    "hasDiscount": true,
+                    "publishedFare": 106.99,
+                    "discountInPercent": 0,
+                    "hasPromoDiscount": false,
+                    "discountAmount": 31
+                  }
+                ]
+              },
+              "operatedBy": "Malta Air",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "AGP",
+                  "destination": "BLQ",
+                  "flightNumber": "FR 4602",
+                  "time": [
+                    "2020-07-03T09:45:00.000",
+                    "2020-07-03T12:15:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-07-03T07:45:00.000Z",
+                    "2020-07-03T10:15:00.000Z"
+                  ],
+                  "duration": "02:30"
+                }
+              ],
+              "flightNumber": "FR 4602",
+              "time": [
+                "2020-07-03T09:45:00.000",
+                "2020-07-03T12:15:00.000"
+              ],
+              "timeUTC": [
+                "2020-07-03T07:45:00.000Z",
+                "2020-07-03T10:15:00.000Z"
+              ],
+              "duration": "02:30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "origin": "BLQ",
+      "originName": "Málaga",
+      "destination": "AGP",
+      "destinationName": "Bolonia",
+      "routeGroup": "LEISURE",
+      "tripType": "SUN_BREAK",
+      "upgradeType": "PLUS",
+      "dates": [
+        {
+          "dateOut": "2020-07-01T00:00:00.000",
+          "flights": [
+            {
+              "faresLeft": -1,
+              "flightKey": "FR~4601~ ~~BLQ~07/01/2020 09:55~AGP~07/01/2020 12:40~~",
+              "infantsLeft": 18,
+              "regularFare": {
+                "fareKey": "3ZJODZRKP576HCEPGOUUDEX6HUFSPQYVBV53CZA7WBVB3GNHJNB2FYCGGJUWLWWGNWOXCZZOHXK5AJIJT72ACDR77JSFDVXPPTUYEAHOCB3XW46NKEIJQVDKO2XH3YUE63IXZZZE5NTJ2WGCX25NAMZMPE2RUBPX532IJJDLNOU4ZR5ZDCZFHUPNYDE6IP66BOREZKDMKODTO",
+                "fareClass": "A",
+                "fares": [
+                  {
+                    "type": "ADT",
+                    "amount": 59.52,
+                    "count": 2,
+                    "hasDiscount": true,
+                    "publishedFare": 92.99,
+                    "discountInPercent": 11,
+                    "hasPromoDiscount": false,
+                    "discountAmount": 33.47
+                  }
+                ]
+              },
+              "operatedBy": "",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "BLQ",
+                  "destination": "AGP",
+                  "flightNumber": "FR 4601",
+                  "time": [
+                    "2020-07-01T09:55:00.000",
+                    "2020-07-01T12:40:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-07-01T07:55:00.000Z",
+                    "2020-07-01T10:40:00.000Z"
+                  ],
+                  "duration": "02:45"
+                }
+              ],
+              "flightNumber": "FR 4601",
+              "time": [
+                "2020-07-01T09:55:00.000",
+                "2020-07-01T12:40:00.000"
+              ],
+              "timeUTC": [
+                "2020-07-01T07:55:00.000Z",
+                "2020-07-01T10:40:00.000Z"
+              ],
+              "duration": "02:45"
+            }
+          ]
+        },
+        {
+          "dateOut": "2020-07-02T00:00:00.000",
+          "flights": []
+        },
+        {
+          "dateOut": "2020-07-03T00:00:00.000",
+          "flights": [
+            {
+              "faresLeft": -1,
+              "flightKey": "FR~4601~ ~~BLQ~07/03/2020 06:25~AGP~07/03/2020 09:10~~",
+              "infantsLeft": 18,
+              "regularFare": {
+                "fareKey": "TRMEK2NKXM6SQESBCOIL47B6GR332CFXCE4UCPDX4IPTYE4OZGE3VAJWXTZLGJ52ZVEJCZTPANMS22JBQNMF72NUUNXXK3LUW4EU3OIQNNMTGPAGS3VYRJSHJVAGQGWZSE74UEOPPFZXMIKJ2QA3BS6YLPTWRIUJ4P6KBHQ4RZ76HGKQ6YZQ",
+                "fareClass": "W",
+                "fares": [
+                  {
+                    "type": "ADT",
+                    "amount": 49.62,
+                    "count": 2,
+                    "hasDiscount": true,
+                    "publishedFare": 54.99,
+                    "discountInPercent": 11,
+                    "hasPromoDiscount": false,
+                    "discountAmount": 0
+                  }
+                ]
+              },
+              "operatedBy": "Malta Air",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "BLQ",
+                  "destination": "AGP",
+                  "flightNumber": "FR 4601",
+                  "time": [
+                    "2020-07-03T06:25:00.000",
+                    "2020-07-03T09:10:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-07-03T04:25:00.000Z",
+                    "2020-07-03T07:10:00.000Z"
+                  ],
+                  "duration": "02:45"
+                }
+              ],
+              "flightNumber": "FR 4601",
+              "time": [
+                "2020-07-03T06:25:00.000",
+                "2020-07-03T09:10:00.000"
+              ],
+              "timeUTC": [
+                "2020-07-03T04:25:00.000Z",
+                "2020-07-03T07:10:00.000Z"
+              ],
+              "duration": "02:45"
+            }
+          ]
+        },
+        {
+          "dateOut": "2020-07-04T00:00:00.000",
+          "flights": []
+        },
+        {
+          "dateOut": "2020-07-05T00:00:00.000",
+          "flights": []
+        }
+      ]
+    }
+  ],
+  "serverTimeUTC": "2020-06-04T13:52:35.325Z"
+}

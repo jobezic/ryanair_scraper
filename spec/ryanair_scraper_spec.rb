@@ -62,4 +62,37 @@ RSpec.describe RyanairScraper do
       end
     end
   end
+
+  context 'round trip' do
+    let(:round_trip) { true }
+
+    context 'with an origin, a destination, a departure date and a return date' do
+      let(:origin) { 'AGP' }
+      let(:destination) { 'BLQ' }
+      let(:date_out) { '2020-07-01' }
+      let(:date_in) { '2020-07-03' }
+
+      let(:command) do
+        RyanairScraper.new(
+          date_out: date_out,
+          date_in: date_in,
+          origin: origin,
+          destination: destination,
+          round_trip: round_trip
+        )
+      end
+
+      it 'returns a successful response' do
+        response = command.call
+
+        expect(response).to be_an_instance_of(Array)
+      end
+
+      it 'returns a single trip' do
+        response = command.call
+
+        expect(response.length).to eq(2)
+      end
+    end
+  end
 end
