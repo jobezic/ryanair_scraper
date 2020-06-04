@@ -35,13 +35,13 @@ class RyanairScraper
   def extract_data
     return if @data['trips'].empty?
 
-    # probably we have more trips if choose a round trip route
-    trip = @data['trips'].first
-    {
-      origin: trip['origin'],
-      destination: trip['destination'],
-      dates: extract_dates_info(trip['dates'])
-    }
+    @data['trips'].map do |trip|
+      {
+        origin: trip['origin'],
+        destination: trip['destination'],
+        dates: extract_dates_info(trip['dates'])
+      }
+    end
   end
 
   def extract_dates_info(dates)
