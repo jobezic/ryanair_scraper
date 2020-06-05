@@ -86,10 +86,15 @@ class RyanairScraper
     return if flights.empty?
 
     flights.map do |flight|
+      # TODO: test the assumption that if faresLeft = 0 we don't have flight to buy
+      # (keep in mind that if faresLeft is -1 the site shows flights to buy)
       next if flight['faresLeft'].zero?
+
+      raise 'no regular fares left' if flight['regularFare'].nil?
 
       {
         fares_left: flight['faresLeft'],
+        # TODO: only regulare fare?
         fares: extract_fares_info(flight['regularFare']['fares'])
       }
     end.compact
