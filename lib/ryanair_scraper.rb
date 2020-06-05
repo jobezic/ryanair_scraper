@@ -71,10 +71,13 @@ class RyanairScraper
     dates.map do |date|
       next if date['flights'].empty?
 
+      flights_info = extract_flights_info(date['flights'])
+      next if flights_info.empty?
+
       # we can have more flights for the same date
       {
         date_out: date['dateOut'],
-        flights: extract_flights_info(date['flights'])
+        flights: flights_info
       }
     end.compact
   end
