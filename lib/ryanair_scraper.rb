@@ -83,11 +83,13 @@ class RyanairScraper
     return if flights.empty?
 
     flights.map do |flight|
+      next if flight['faresLeft'].zero?
+
       {
         fares_left: flight['faresLeft'],
         fares: extract_fares_info(flight['regularFare']['fares'])
       }
-    end
+    end.compact
   end
 
   def extract_fares_info(fares)
