@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require './src/ryanair_scraper'
+require './lib/ryanair_scraper'
 require 'spec_helper'
 
 RSpec.describe RyanairScraper do

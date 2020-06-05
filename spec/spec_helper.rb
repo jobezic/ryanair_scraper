@@ -2,7 +2,7 @@
 
 require 'webmock/rspec'
 require 'json'
-require './src/constants'
+require './lib/constants'
 
 WebMock.disable_net_connect!(allow_localhost: true)
 
