@@ -104,6 +104,10 @@ RSpec.describe RyanairScraper do
               destination: 'BLQ',
               dates: [
                 {
+                  date_out: '2020-07-01T00:00:00.000',
+                  flights: [{ fares_left: -1, fares: [{ amount: 59.52 }] }]
+                },
+                {
                   date_out: '2020-07-03T00:00:00.000',
                   flights: [{ fares_left: 4, fares: [{ amount: 75.99 }] }]
                 }
@@ -112,7 +116,16 @@ RSpec.describe RyanairScraper do
             {
               origin: 'BLQ',
               destination: 'AGP',
-              dates: []
+              dates: [
+                {
+                  date_out: '2020-07-01T00:00:00.000',
+                  flights: [{ fares_left: -1, fares: [{ amount: 59.52 }] }]
+                },
+                {
+                  date_out: '2020-07-03T00:00:00.000',
+                  flights: [{ fares_left: -1, fares: [{ amount: 49.62 }] }]
+                }
+              ]
             }
           ]
         )
