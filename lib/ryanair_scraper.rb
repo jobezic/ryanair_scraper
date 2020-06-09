@@ -95,7 +95,8 @@ class RyanairScraper
       {
         fares_left: flight['faresLeft'],
         # TODO: only regulare fare?
-        fares: extract_fares_info(flight['regularFare']['fares'])
+        fares: extract_fares_info(flight['regularFare']['fares']),
+        segments: extract_segments_info(flight['segments'])
       }
     end.compact
   end
@@ -104,6 +105,19 @@ class RyanairScraper
     fares.map do |fare|
       {
         amount: fare['amount']
+      }
+    end
+  end
+
+  def extract_segments_info(segments)
+    segments.map do |segment|
+      {
+        flight_number: segment['flightNumber'],
+        origin: segment['origin'],
+        destination: segment['destination'],
+        duration: segment['duration'],
+        departure: segment['timeUTC'].first,
+        arrival: segment['timeUTC'].last
       }
     end
   end

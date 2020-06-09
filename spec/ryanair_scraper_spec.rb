@@ -51,11 +51,39 @@ RSpec.describe RyanairScraper do
           dates: [
             {
               date_out: '2020-07-01T00:00:00.000',
-              flights: [{ fares_left: 2, fares: [{ amount: 65.99 }] }]
+              flights: [
+                {
+                  fares_left: 2, fares: [{ amount: 65.99 }],
+                  segments: [
+                    {
+                      flight_number: 'FR 4602',
+                      origin: 'AGP',
+                      destination: 'BLQ',
+                      duration: '02:30',
+                      departure: '2020-07-01T04:55:00.000Z',
+                      arrival: '2020-07-01T07:25:00.000Z'
+                    }
+                  ]
+                }
+              ]
             },
             {
               date_out: '2020-07-03T00:00:00.000',
-              flights: [{ fares_left: 2, fares: [{ amount: 75.99 }] }]
+              flights: [
+                {
+                  fares_left: 2, fares: [{ amount: 75.99 }],
+                  segments: [
+                    {
+                      flight_number: 'FR 4602',
+                      origin: 'AGP',
+                      destination: 'BLQ',
+                      duration: '02:30',
+                      departure: '2020-07-03T07:45:00.000Z',
+                      arrival: '2020-07-03T10:15:00.000Z'
+                    }
+                  ]
+                }
+              ]
             }
           ]
         )
@@ -105,11 +133,39 @@ RSpec.describe RyanairScraper do
               dates: [
                 {
                   date_out: '2020-07-01T00:00:00.000',
-                  flights: [{ fares_left: -1, fares: [{ amount: 59.52 }] }]
+                  flights: [
+                    {
+                      fares_left: -1, fares: [{ amount: 59.52 }],
+                      segments: [
+                        {
+                          flight_number: 'FR 4602',
+                          origin: 'AGP',
+                          destination: 'BLQ',
+                          duration: '02:30',
+                          departure: '2020-07-01T04:55:00.000Z',
+                          arrival: '2020-07-01T07:25:00.000Z'
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   date_out: '2020-07-03T00:00:00.000',
-                  flights: [{ fares_left: 4, fares: [{ amount: 75.99 }] }]
+                  flights: [
+                    {
+                      fares_left: 4, fares: [{ amount: 75.99 }],
+                      segments: [
+                        {
+                          flight_number: 'FR 4602',
+                          origin: 'AGP',
+                          destination: 'BLQ',
+                          duration: '02:30',
+                          departure: '2020-07-03T07:45:00.000Z',
+                          arrival: '2020-07-03T10:15:00.000Z'
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -119,11 +175,39 @@ RSpec.describe RyanairScraper do
               dates: [
                 {
                   date_out: '2020-07-01T00:00:00.000',
-                  flights: [{ fares_left: -1, fares: [{ amount: 59.52 }] }]
+                  flights: [
+                    {
+                      fares_left: -1, fares: [{ amount: 59.52 }],
+                      segments: [
+                        {
+                          flight_number: 'FR 4601',
+                          origin: 'BLQ',
+                          destination: 'AGP',
+                          duration: '02:45',
+                          departure: '2020-07-01T07:55:00.000Z',
+                          arrival: '2020-07-01T10:40:00.000Z'
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   date_out: '2020-07-03T00:00:00.000',
-                  flights: [{ fares_left: -1, fares: [{ amount: 49.62 }] }]
+                  flights: [
+                    {
+                      fares_left: -1, fares: [{ amount: 49.62 }],
+                      segments: [
+                        {
+                          flight_number: 'FR 4601',
+                          origin: 'BLQ',
+                          destination: 'AGP',
+                          duration: '02:45',
+                          departure: '2020-07-03T04:25:00.000Z',
+                          arrival: '2020-07-03T07:10:00.000Z'
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
