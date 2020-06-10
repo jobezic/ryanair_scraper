@@ -76,7 +76,7 @@ class RyanairScraper
 
       # we can have more flights for the same date
       {
-        date_out: date['dateOut'],
+        date: date['dateOut'],
         flights: flights_info
       }
     end.compact
@@ -93,32 +93,28 @@ class RyanairScraper
       raise 'no regular fares left' if flight['regularFare'].nil?
 
       {
-        fares_left: flight['faresLeft'],
         # TODO: only regulare fare?
         fares: extract_fares_info(flight['regularFare']['fares']),
-        segments: extract_segments_info(flight['segments'])
-      }
+      }.merge(
+        extract_segments_info(flight['segments'])
+      )
     end.compact
   end
 
   def extract_fares_info(fares)
-    fares.map do |fare|
-      {
-        amount: fare['amount']
-      }
-    end
+    fares.map { |fare| fare['amount'] }
   end
 
   def extract_segments_info(segments)
-    segments.map do |segment|
-      {
-        flight_number: segment['flightNumber'],
-        origin: segment['origin'],
-        destination: segment['destination'],
-        duration: segment['duration'],
-        departure: segment['timeUTC'].first,
-        arrival: segment['timeUTC'].last
-      }
-    end
+    return if segments.nil?
+
+    # TODO: handle layovers
+    {
+      layovers: segments.count == 1 ? [] : [],
+      departure: segments.first['timeUTC'].first,
+      arrival: segments.last['timeUTC'].last,
+      duration: segments.first['duration'],
+      flight_number: segments.first['flightNumber']
+    }
   end
 end
