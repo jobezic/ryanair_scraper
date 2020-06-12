@@ -5,12 +5,20 @@ require 'json'
 require './lib/constants'
 
 class RyanairScraper
-  def initialize(date_in: '', date_out:, origin:, destination:, round_trip: false)
+  def initialize(
+    date_in: '',
+    date_out:,
+    origin:,
+    destination:,
+    round_trip: false,
+    include_connecting_flights: false
+  )
     @date_in = date_in
     @date_out = date_out
     @origin = origin
     @destination = destination
     @round_trip = round_trip
+    @include_connecting_flights = include_connecting_flights
   end
 
   def call
@@ -33,7 +41,7 @@ class RyanairScraper
         Origin: @origin,
         Destination: @destination,
         RoundTrip: @round_trip,
-        IncludeConnectingFlights: false,
+        IncludeConnectingFlights: @include_connecting_flights,
         Disc: 0,
         INF: 0,
         TEEN: 0,
@@ -95,9 +103,12 @@ class RyanairScraper
       {
         # TODO: only regulare fare?
         fares: extract_fares_info(flight['regularFare']['fares']),
-      }.merge(
-        extract_segments_info(flight['segments'])
-      )
+        duration: flight['duration'],
+        flight_number: flight['flightNumber'],
+        departure: flight['timeUTC'].first,
+        arrival: flight['timeUTC'].last,
+        layovers: extract_layovers(flight['segments'])
+      }
     end.compact
   end
 
@@ -105,16 +116,9 @@ class RyanairScraper
     fares.map { |fare| fare['amount'] }
   end
 
-  def extract_segments_info(segments)
+  def extract_layovers(segments)
     return if segments.nil?
 
-    # TODO: handle layovers
-    {
-      layovers: segments.count == 1 ? [] : [],
-      departure: segments.first['timeUTC'].first,
-      arrival: segments.last['timeUTC'].last,
-      duration: segments.first['duration'],
-      flight_number: segments.first['flightNumber']
-    }
+    segments.map { |segment| segment['destination'] }.tap(&:pop)
   end
 end

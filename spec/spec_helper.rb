@@ -21,5 +21,13 @@ RSpec.configure do |config|
     ).to_return(
       status: 200, body: fake_response_round_trip, headers: {}
     )
+
+    fake_response_connecting_flights =
+      File.open 'spec/fake_response_connecting_flights.json'
+    stub_request(:get, /#{API_HOST}.+IncludeConnectingFlights=true/).with(
+      headers: { 'Accept': '*/*', 'User-Agent': 'Ruby' }
+    ).to_return(
+      status: 200, body: fake_response_connecting_flights, headers: {}
+    )
   end
 end

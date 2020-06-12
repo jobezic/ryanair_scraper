@@ -186,4 +186,56 @@ RSpec.describe RyanairScraper do
       end
     end
   end
+
+  context 'with layovers' do
+    let(:origin) { 'BRI' }
+    let(:destination) { 'BCN' }
+    let(:date_out) { '2020-09-13' }
+    let(:include_connecting_flights) { true }
+
+    let(:command) do
+      RyanairScraper.new(
+        date_out: date_out,
+        origin: origin,
+        destination: destination,
+        include_connecting_flights: include_connecting_flights
+      )
+    end
+
+    it 'returns a successful response' do
+      response = command.call
+
+      expect(response).to be_an_instance_of(Array)
+    end
+
+    it 'returns a single trip' do
+      response = command.call
+
+      expect(response.length).to eq(1)
+    end
+
+    it 'returns a response containing an origin, a destination and dates' do
+      response = command.call.first
+
+      expect(response).to eq(
+        origin: 'BRI',
+        destination: 'BCN',
+        dates: [
+          {
+            date: '2020-09-08T00:00:00.000',
+            flights: [
+              {
+                fares: [80.98],
+                layovers: ['BGY'],
+                departure: '2020-09-08T16:40:00.000Z',
+                arrival: '2020-09-08T23:00:00.000Z',
+                duration: '06:20',
+                flight_number: 'FR 4705/FR 6366'
+              }
+            ]
+          }
+        ]
+      )
+    end
+  end
 end

@@ -1,0 +1,302 @@
+{
+  "termsOfUse": "https://www.ryanair.com/ie/en/corporate/terms-of-use=AGREED",
+  "currency": "EUR",
+  "currPrecision": 2,
+  "routeGroup": "",
+  "tripType": "OTHER",
+  "upgradeType": "PLUS",
+  "trips": [
+    {
+      "origin": "BRI",
+      "originName": "Bari",
+      "destination": "BCN",
+      "destinationName": "Barcelona T2",
+      "routeGroup": "",
+      "tripType": "OTHER",
+      "upgradeType": "PLUS",
+      "dates": [
+        {
+          "dateOut": "2020-09-08T00:00:00.000",
+          "flights": [
+            {
+              "faresLeft": 1,
+              "flightKey": "FR~4705~ ~~BRI~09/08/2020 18:40~BGY~09/08/2020 20:15~~^FR~6366~ ~~BGY~09/08/2020 23:25~BCN~09/09/2020 01:00~~",
+              "infantsLeft": 18,
+              "regularFare": {
+                "fareKey": "S4LCYEZX5GJJ4PPSK432KAR6ZQISNKLTKWYTWXTTL4ILRAG6THIUN6VXLLUY43XEBNRS2SM3D5LIXFPZ5ZJYIXDYU6ADNT4QDPKCEXSBWV3D25GRRVBXJNYS2AKK6JCZFNSBDXJBS5X7TB7KNYO5HKUCSIQSV5DOKALMI3P24MDJXGKZ7OPUQ42OTKMJZU5PKB2ZLGCODUKT725TJNFEVFIAD25U3QR7IUA2PVASX4BLR7D7DOXQM5426JRXO2AMHTEXZFXGTS6CVVEJ6H4T54ZTLZNCDZRXSVIF33IIWWWFACG5QZ5A",
+                "fareClass": "T^A",
+                "fares": [
+                  {
+                    "type": "ADT",
+                    "amount": 80.98,
+                    "count": 1,
+                    "hasDiscount": false,
+                    "publishedFare": 80.98,
+                    "discountInPercent": 0,
+                    "hasPromoDiscount": false,
+                    "discountAmount": 0
+                  }
+                ]
+              },
+              "operatedBy": "Malta Air",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "BRI",
+                  "destination": "BGY",
+                  "flightNumber": "FR 4705",
+                  "time": [
+                    "2020-09-08T18:40:00.000",
+                    "2020-09-08T20:15:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-08T16:40:00.000Z",
+                    "2020-09-08T18:15:00.000Z"
+                  ],
+                  "duration": "01:35"
+                },
+                {
+                  "segmentNr": 1,
+                  "origin": "BGY",
+                  "destination": "BCN",
+                  "flightNumber": "FR 6366",
+                  "time": [
+                    "2020-09-08T23:25:00.000",
+                    "2020-09-09T01:00:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-08T21:25:00.000Z",
+                    "2020-09-08T23:00:00.000Z"
+                  ],
+                  "duration": "01:35"
+                }
+              ],
+              "flightNumber": "FR 4705/FR 6366",
+              "time": [
+                "2020-09-08T18:40:00.000",
+                "2020-09-09T01:00:00.000"
+              ],
+              "timeUTC": [
+                "2020-09-08T16:40:00.000Z",
+                "2020-09-08T23:00:00.000Z"
+              ],
+              "duration": "06:20"
+            }
+          ]
+        },
+        {
+          "dateOut": "2020-09-09T00:00:00.000",
+          "flights": [
+            {
+              "faresLeft": 0,
+              "flightKey": "FR~4705~ ~~BRI~09/09/2020 17:50~BGY~09/09/2020 19:25~~^FR~6366~ ~~BGY~09/09/2020 22:25~BCN~09/09/2020 23:59~~",
+              "infantsLeft": 18,
+              "operatedBy": "Malta Air",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "BRI",
+                  "destination": "BGY",
+                  "flightNumber": "FR 4705",
+                  "time": [
+                    "2020-09-09T17:50:00.000",
+                    "2020-09-09T19:25:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-09T15:50:00.000Z",
+                    "2020-09-09T17:25:00.000Z"
+                  ],
+                  "duration": "01:35"
+                },
+                {
+                  "segmentNr": 1,
+                  "origin": "BGY",
+                  "destination": "BCN",
+                  "flightNumber": "FR 6366",
+                  "time": [
+                    "2020-09-09T22:25:00.000",
+                    "2020-09-09T23:59:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-09T20:25:00.000Z",
+                    "2020-09-09T21:59:00.000Z"
+                  ],
+                  "duration": "01:34"
+                }
+              ],
+              "flightNumber": "FR 4705/FR 6366",
+              "time": [
+                "2020-09-09T17:50:00.000",
+                "2020-09-09T23:59:00.000"
+              ],
+              "timeUTC": [
+                "2020-09-09T15:50:00.000Z",
+                "2020-09-09T21:59:00.000Z"
+              ],
+              "duration": "06:09"
+            }
+          ]
+        },
+        {
+          "dateOut": "2020-09-10T00:00:00.000",
+          "flights": [
+            {
+              "faresLeft": 0,
+              "flightKey": "FR~7093~ ~~BRI~09/10/2020 08:45~FCO~09/10/2020 09:50~~^FR~6974~ ~~FCO~09/10/2020 15:45~BCN~09/10/2020 17:40~~",
+              "infantsLeft": 18,
+              "operatedBy": "Malta Air",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "BRI",
+                  "destination": "FCO",
+                  "flightNumber": "FR 7093",
+                  "time": [
+                    "2020-09-10T08:45:00.000",
+                    "2020-09-10T09:50:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-10T06:45:00.000Z",
+                    "2020-09-10T07:50:00.000Z"
+                  ],
+                  "duration": "01:05"
+                },
+                {
+                  "segmentNr": 1,
+                  "origin": "FCO",
+                  "destination": "BCN",
+                  "flightNumber": "FR 6974",
+                  "time": [
+                    "2020-09-10T15:45:00.000",
+                    "2020-09-10T17:40:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-10T13:45:00.000Z",
+                    "2020-09-10T15:40:00.000Z"
+                  ],
+                  "duration": "01:55"
+                }
+              ],
+              "flightNumber": "FR 7093/FR 6974",
+              "time": [
+                "2020-09-10T08:45:00.000",
+                "2020-09-10T17:40:00.000"
+              ],
+              "timeUTC": [
+                "2020-09-10T06:45:00.000Z",
+                "2020-09-10T15:40:00.000Z"
+              ],
+              "duration": "08:55"
+            },
+            {
+              "faresLeft": 0,
+              "flightKey": "FR~4705~ ~~BRI~09/10/2020 17:50~BGY~09/10/2020 19:25~~^FR~6366~ ~~BGY~09/10/2020 22:25~BCN~09/10/2020 23:59~~",
+              "infantsLeft": 18,
+              "operatedBy": "Malta Air",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "BRI",
+                  "destination": "BGY",
+                  "flightNumber": "FR 4705",
+                  "time": [
+                    "2020-09-10T17:50:00.000",
+                    "2020-09-10T19:25:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-10T15:50:00.000Z",
+                    "2020-09-10T17:25:00.000Z"
+                  ],
+                  "duration": "01:35"
+                },
+                {
+                  "segmentNr": 1,
+                  "origin": "BGY",
+                  "destination": "BCN",
+                  "flightNumber": "FR 6366",
+                  "time": [
+                    "2020-09-10T22:25:00.000",
+                    "2020-09-10T23:59:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-10T20:25:00.000Z",
+                    "2020-09-10T21:59:00.000Z"
+                  ],
+                  "duration": "01:34"
+                }
+              ],
+              "flightNumber": "FR 4705/FR 6366",
+              "time": [
+                "2020-09-10T17:50:00.000",
+                "2020-09-10T23:59:00.000"
+              ],
+              "timeUTC": [
+                "2020-09-10T15:50:00.000Z",
+                "2020-09-10T21:59:00.000Z"
+              ],
+              "duration": "06:09"
+            }
+          ]
+        },
+        {
+          "dateOut": "2020-09-11T00:00:00.000",
+          "flights": [
+            {
+              "faresLeft": 0,
+              "flightKey": "FR~4705~ ~~BRI~09/11/2020 17:50~BGY~09/11/2020 19:25~~^FR~6366~ ~~BGY~09/11/2020 23:50~BCN~09/12/2020 01:25~~",
+              "infantsLeft": 18,
+              "operatedBy": "Malta Air",
+              "segments": [
+                {
+                  "segmentNr": 0,
+                  "origin": "BRI",
+                  "destination": "BGY",
+                  "flightNumber": "FR 4705",
+                  "time": [
+                    "2020-09-11T17:50:00.000",
+                    "2020-09-11T19:25:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-11T15:50:00.000Z",
+                    "2020-09-11T17:25:00.000Z"
+                  ],
+                  "duration": "01:35"
+                },
+                {
+                  "segmentNr": 1,
+                  "origin": "BGY",
+                  "destination": "BCN",
+                  "flightNumber": "FR 6366",
+                  "time": [
+                    "2020-09-11T23:50:00.000",
+                    "2020-09-12T01:25:00.000"
+                  ],
+                  "timeUTC": [
+                    "2020-09-11T21:50:00.000Z",
+                    "2020-09-11T23:25:00.000Z"
+                  ],
+                  "duration": "01:35"
+                }
+              ],
+              "flightNumber": "FR 4705/FR 6366",
+              "time": [
+                "2020-09-11T17:50:00.000",
+                "2020-09-12T01:25:00.000"
+              ],
+              "timeUTC": [
+                "2020-09-11T15:50:00.000Z",
+                "2020-09-11T23:25:00.000Z"
+              ],
+              "duration": "07:35"
+            }
+          ]
+        },
+        {
+          "dateOut": "2020-09-12T00:00:00.000",
+          "flights": []
+        }
+      ]
+    }
+  ],
+  "serverTimeUTC": "2020-06-10T14:26:08.425Z"
+}
