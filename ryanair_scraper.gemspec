@@ -4,9 +4,9 @@ Gem::Specification.new do |s|
   s.date        = '2020-06-05'
   s.summary     = 'Ryanair Scraper'
   s.description = 'A library to fetch flights info from Ryanair api'
-  s.authors     = ['pinkra']
+  s.authors     = ['jobezic']
   s.email       = 'jobezic@gmail.com'
   s.files       = ['lib/ryanair_scraper.rb']
-  s.homepage    = 'https://github.com/pinkra/ryanair_scraper'
+  s.homepage    = 'https://github.com/jobezic/ryanair_scraper'
   s.license     = 'MIT'
 end
