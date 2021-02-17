@@ -9,5 +9,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rspec'
-gem 'webmock'
+group :development, :test do
+  gem 'rspec'
+  gem 'webmock'
+end
