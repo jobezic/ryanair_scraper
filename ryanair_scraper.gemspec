@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = 'A library to fetch flights info from Ryanair api'
   s.authors     = ['jobezic']
   s.email       = 'jobezic@gmail.com'
-  s.files       = ['lib/ryanair_scraper.rb']
+  s.files       = ['lib/ryanair_scraper.rb', 'lib/constants.rb', 'Gemfile', 'ryanair_scraper.gemspec', 'README.md']
   s.homepage    = 'https://github.com/jobezic/ryanair_scraper'
   s.license     = 'MIT'
 end

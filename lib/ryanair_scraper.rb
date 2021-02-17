@@ -2,7 +2,7 @@
 
 require 'net/http'
 require 'json'
-require './lib/constants'
+require 'constants'
 
 class RyanairScraper
   def initialize(
