@@ -50,7 +50,7 @@ RSpec.describe RyanairScraper do
           destination: 'BLQ',
           dates: [
             {
-              date: '2020-07-01',
+              date: '2020-07-01T00:00:00.000',
               flights: [
                 {
                   fares: [65.99],
@@ -63,7 +63,7 @@ RSpec.describe RyanairScraper do
               ]
             },
             {
-              date: '2020-07-03',
+              date: '2020-07-03T00:00:00.000',
               flights: [
                 {
                   fares: [75.99],
@@ -122,7 +122,7 @@ RSpec.describe RyanairScraper do
               destination: 'BLQ',
               dates: [
                 {
-                  date: '2020-07-01',
+                  date: '2020-07-01T00:00:00.000',
                   flights: [
                     {
                       fares: [59.52],
@@ -135,7 +135,7 @@ RSpec.describe RyanairScraper do
                   ]
                 },
                 {
-                  date: '2020-07-03',
+                  date: '2020-07-03T00:00:00.000',
                   flights: [
                     {
                       fares: [75.99],
@@ -154,7 +154,7 @@ RSpec.describe RyanairScraper do
               destination: 'AGP',
               dates: [
                 {
-                  date: '2020-07-01',
+                  date: '2020-07-01T00:00:00.000',
                   flights: [
                     {
                       fares: [59.52],
@@ -167,7 +167,7 @@ RSpec.describe RyanairScraper do
                   ]
                 },
                 {
-                  date: '2020-07-03',
+                  date: '2020-07-03T00:00:00.000',
                   flights: [
                     {
                       fares: [49.62],
@@ -222,7 +222,7 @@ RSpec.describe RyanairScraper do
         destination: 'BCN',
         dates: [
           {
-            date: '2020-09-08',
+            date: '2020-09-08T00:00:00.000',
             flights: [
               {
                 fares: [80.98],
