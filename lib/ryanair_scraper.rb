@@ -84,7 +84,7 @@ class RyanairScraper
 
       # we can have more flights for the same date
       {
-        date: date['dateOut'],
+        date: date['dateOut'].split('T').first,
         flights: flights_info
       }
     end.compact
